@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Eliot - Mundo de Dinosaurios</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            z-index: 2;
+            position: relative;
+        }
+        
+        .dino-banner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.3;
+            z-index: 1;
+            background-image: url('https://cdn.pixabay.com/photo/2017/01/31/15/33/background-2025157_960_720.png');
+            background-size: contain;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .dino-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .dino-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .dino-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .dino-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        
+        .dino-info {
+            padding: 15px;
+        }
+        
+        .dino-name {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+            color: #2E8B57;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        
+        .intro {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="dino-banner"></div>
+        <h1>Angel Eliot</h1>
+        <p>Explorando el mundo de los dinosaurios</p>
+    </header>
+    
+    <div class="container">
+        <div class="intro">
+            <h2>¡Bienvenido al fascinante mundo de los dinosaurios!</h2>
+            <p>Angel Eliot es tu guía en este viaje a través del tiempo para descubrir las criaturas más increíbles que alguna vez habitaron nuestro planeta.</p>
+        </div>
+        
+        <div class="dino-grid">
+            <!-- Tarjeta de dinosaurio 1 -->
+            <div class="dino-card">
+                <img src="https://cdn.pixabay.com/photo/2016/10/22/20/34/t-rex-1761923_960_720.png" alt="T-Rex" class="dino-img">
+                <div class="dino-info">
+                    <div class="dino-name">Tyrannosaurus Rex</div>
+                    <p>El rey de los dinosaurios, un temible depredador del período Cretácico.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta de dinosaurio 2 -->
+            <div class="dino-card">
+                <img src="https://cdn.pixabay.com/photo/2014/04/03/00/41/triceratops-309241_960_720.png" alt="Triceratops" class="dino-img">
+                <div class="dino-info">
+                    <div class="dino-name">Triceratops</div>
+                    <p>Herbívoro con tres cuernos que vivió al final del período Cretácico.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta de dinosaurio 3 -->
+            <div class="dino-card">
+                <img src="https://cdn.pixabay.com/photo/2014/04/03/00/41/brontosaurus-309240_960_720.png" alt="Brontosaurio" class="dino-img">
+                <div class="dino-info">
+                    <div class="dino-name">Brontosaurio</div>
+                    <p>Uno de los dinosaurios más grandes, con un cuello extremadamente largo.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta de dinosaurio 4 -->
+            <div class="dino-card">
+                <img src="https://cdn.pixabay.com/photo/2014/04/03/00/41/velociraptor-309244_960_720.png" alt="Velociraptor" class="dino-img">
+                <div class="dino-info">
+                    <div class="dino-name">Velociraptor</div>
+                    <p>Pequeño pero inteligente depredador, famoso por sus garras afiladas.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta de dinosaurio 5 -->
+            <div class="dino-card">
+                <img src="https://cdn.pixabay.com/photo/2014/04/03/00/41/stegosaurus-309242_960_720.png" alt="Stegosaurus" class="dino-img">
+                <div class="dino-info">
+                    <div class="dino-name">Stegosaurus</div>
+                    <p>Reconocible por sus placas óseas en la espalda y cola con púas.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta de dinosaurio 6 -->
+            <div class="dino-card">
+                <img src="https://cdn.pixabay.com/photo/2014/04/03/00/41/pterodactyl-309243_960_720.png" alt="Pterodáctilo" class="dino-img">
+                <div class="dino-info">
+                    <div class="dino-name">Pterodáctilo</div>
+                    <p>Reptil volador que dominó los cielos en la era Mesozoica.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta de dinosaurio 7 -->
+            <div class="dino-card">
+                <img src="https://cdn.pixabay.com/photo/2016/10/22/20/34/dinosaur-1761924_960_720.png" alt="Anquilosaurio" class="dino-img">
+                <div class="dino-info">
+                    <div class="dino-name">Anquilosaurio</div>
+                    <p>El tanque viviente, protegido por una armadura ósea y una cola con maza.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta de dinosaurio 8 -->
+            <div class="dino-card">
+                <img src="https://cdn.pixabay.com/photo/2016/10/22/20/34/dinosaur-1761925_960_720.png" alt="Dilophosaurus" class="dino-img">
+                <div class="dino-info">
+                    <div class="dino-name">Dilophosaurus</div>
+                    <p>Depredador temprano conocido por sus distintivas crestas en la cabeza.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2023 Angel Eliot - Todos los derechos reservados</p>
+        <p>Pasión por los dinosaurios desde el Mesozoico</p>
+    </footer>
+</body>
+</html>
